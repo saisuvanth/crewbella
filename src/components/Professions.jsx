@@ -17,7 +17,7 @@ const Professions = ({ professions }) => {
 
 	return (
 		<div id='professions' style={{ minHeight: '250px' }}>
-			<div style={{ color: 'green', fontSize: '2rem', margin: '2rem' }}>PORTFOLIO</div>
+			<div style={{ color: 'green', fontSize: '2rem', margin: '2rem' }}>PROFESSIONS</div>
 
 			<Container>
 				<Row style={{ minHeight: '250px' }}>
