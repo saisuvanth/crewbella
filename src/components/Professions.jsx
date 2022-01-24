@@ -12,6 +12,7 @@ const Professions = ({ professions }) => {
 			else setList2(lis => [...lis, prof]);
 		});
 		console.log(list1, list2);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [professions]);
 
 	return (

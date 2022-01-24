@@ -5,6 +5,7 @@ import "./Navbar.css";
 
 const NavBar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false);
+	// eslint-disable-next-line no-unused-vars
 	const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
 	const toggleNav = () => {
