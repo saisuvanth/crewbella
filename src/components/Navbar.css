@@ -1,0 +1,159 @@
+#logo {
+	position: absolute;
+	margin-top: 3px;
+	margin-left: 15px;
+	width: 80px;
+	height: 60px;
+	z-index: 100;
+  }
+  
+  #navbar-nav {
+	position: sticky;
+	z-index: 100;
+	overflow: auto;
+	top: 0;
+	width: 100%;
+	height: 70px;
+	/* display: block; */
+	background: linear-gradient(0deg, #19191f, #24242b);
+	backdrop-filter: blur(20px);
+  }
+  
+  .list {
+	list-style-type: none;
+	float: right;
+	height: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+  }
+  
+  .link {
+	color: azure;
+	font-family: var(--font-primary);
+	font-weight: bolder;
+	display: inline-block;
+	text-align: center;
+	margin-left: 0px;
+	text-decoration: none;
+  }
+  
+  .items {
+	float: left;
+	margin-right: 50px;
+	font-size: 20px;
+	text-transform: uppercase;
+	cursor: pointer;
+  }
+  
+  .navbar-btn-click {
+	display: none;
+  }
+  
+  @media screen and (max-width: 856px) {
+	#navbar-nav {
+	  overflow: auto;
+	  top: 0;
+	  width: 100%;
+	  min-height: 70px;
+	  height: auto;
+	  background: linear-gradient(0deg, #19191fdc, #292931dc);
+	  backdrop-filter: blur(20px);
+	}
+  
+	.list.active {
+	  flex-direction: column;
+	  height: auto;
+	  width: 100%;
+	  border-radius: 0;
+	  padding-left: 10px;
+	  padding-right: 10px;
+	}
+  
+	.list {
+	  border-radius: 0;
+	  height: 0;
+	  overflow: hidden;
+	  transition: all 3s;
+	}
+  
+	.items:nth-child(1) {
+	  border-top: 1px solid #fff;
+	  margin-top: 50px;
+	}
+  
+	.items {
+	  width: 100%;
+	  border-top: 1px solid rgba(255, 255, 255, 0.5);
+	  text-align: center;
+	  margin-right: 0px;
+	  padding: 20px 0;
+	  animation: 4s;
+	}
+  
+	.navbar-btn-click {
+	  display: block;
+	  right: 0%;
+	  z-index: 2;
+	  position: absolute;
+	  margin: 15px 10px;
+	  border: none;
+	  background: none;
+	}
+  
+	.navbar-btn-line {
+	  height: 4px;
+	  background-color: plum;
+	  margin: 3px 0;
+	  float: right;
+	  clear: right;
+	}
+  
+	#navbar-btn-line1 {
+	  width: 30px;
+	}
+  
+	#navbar-btn-line2 {
+	  width: 20px;
+	}
+  
+	#navbar-btn-line3 {
+	  width: 25px;
+	}
+  
+	.navbar-btn-click:hover .navbar-btn-line {
+	  width: 100%;
+	}
+  }
+  
+  .selected {
+	color: rgb(94, 165, 47);
+	font-weight: 600;
+  }
+  
+  .link:hover {
+	color: rgb(88, 133, 58);
+  }
+  
+  .hover-underline-animation {
+	display: inline-block;
+	position: relative;
+  }
+  
+  .hover-underline-animation:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #0087ca;
+	transform-origin: bottom right;
+	transition: transform 0.75s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+  }

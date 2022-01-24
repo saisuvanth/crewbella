@@ -1,0 +1,23 @@
+#column1{
+	border-right: 3px solid;
+	border-color: green;
+}
+
+#column2{
+	border-left: 3px solid;
+	border-color: green;
+}
+
+.mycontainer{
+	color: white;
+	border: 1px solid green;
+	box-shadow: 2px;
+}
+
+.righto{
+	margin-left: 8px;
+}
+
+.lefto{
+	margin-right: 8px;
+}
